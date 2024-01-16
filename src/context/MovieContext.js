@@ -10,7 +10,8 @@ export const ContextProvider = ({ children }) => {
   const [movie, setMovie] = useState([]);
   const [series, setSeries] = useState([]);
 
-  const url = "http://localhost:5000";
+  //const url = "http://localhost:5000";
+  const url = "https://movie-app-nqr1.onrender.com";
   return (
     <MovieContext.Provider
       value={{
