@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(24, 24, 24);
+}
+a {
+  color: #fafafa;
+  text-decoration: none;
+}
+.loading {
+  color: #fafafa;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(24, 24, 24);
+}
+.full-loading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fafafa;
+}
+.full-loading h1 {
+  display: flex;
+  align-items: center;
+}
+.load {
+  animation: load 500ms infinite;
+}
+@keyframes load {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Nav*/
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(black, black, transparent);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.nav h3 {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+.nav nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  color: #fafafa;
+  height: 100%;
+  align-items: center;
+}
+.nav h1 {
+  color: red;
+  font-size: 2em;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.menu {
+  display: none;
+  gap: 50px;
+  list-style: none;
+  font-weight: 550;
+}
+.menu li {
+  display: flex;
+  align-items: center;
+  transition: border 600ms;
+}
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  top: 100px;
+  height: 0;
+  list-style: none;
+  background-color: rgb(24, 24, 24);
+  overflow-y: hidden;
+  transition: height 500ms;
+}
+.drop-down li {
+  padding: 10px;
+  font-weight: 550;
+}
+.nav button {
+  margin-right: 10px;
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fafafa;
+  display: none;
+  background-color: red;
+  border: none;
+}
+/*header*/
+.header {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(114, 112, 112);
+  background-blend-mode: multiply;
+}
+.header-con {
+  width: 100%;
+  max-width: 1200px;
+  color: #fafafa;
+}
+.header-con div {
+  margin-top: 100px;
+  margin-left: 15px;
+}
+.header-con button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fafafa;
+  background-color: red;
+  border: 1px solid red;
+  transition: background-color 0.7s;
+}
+.header-con button:hover {
+  background-color: #fafafa;
+}
+.header-con h1 {
+  font-size: 2em;
+  width: 50%;
+}
+.header-con p {
+  font-weight: 600;
+  font-size: 16px;
+}
+/*All movie*/
+.movies {
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+}
+.movies-con {
+  width: 100%;
+  max-width: 1200px;
+}
+.movies-con div {
+  color: #fafafa;
+  margin-top: 50px;
+  height: 50px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  border-bottom: 4px solid red;
+}
+.movies-con section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.movies-con article {
+  width: 90%;
+  height: 350px;
+  color: #fafafa;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: black;
+}
+.movies-con span {
+  width: 100%;
+  height: 75%;
+  display: block;
+}
+.header-con article:hover {
+  text-decoration: underline;
+}
+.movies-con article p {
+  padding: 10px;
+  font-weight: 600;
+}
+.movies-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*single movie*/
+.single-movie {
+  display: flex;
+  justify-content: center;
+}
+.single-con {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 100px;
+  color: #fafafa;
+  display: flex;
+}
+.synopsis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.synopsis div {
+  width: 90%;
+}
+.synopsis span {
+  width: 80%;
+  display: block;
+}
+.synopsis img {
+  width: 100%;
+}
+.download-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.download-btn p {
+  font-weight: 500;
+  padding: 5px;
+}
+.download-btn button {
+  width: 100px;
+  height: 35px;
+  border: 2px solid red;
+  border: none;
+  font-weight: 650;
+  background-color: red;
+  color: #fafafa;
+}
+
+@media (min-width: 780px) {
+  .nav h3 {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .nav button {
+    display: block;
+  }
+  .nav h1 {
+    font-size: 2.5em;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header-con h1 {
+    font-size: 3em;
+  }
+  .header-con button {
+    width: 130px;
+    height: 50px;
+  }
+  .movies-con div {
+    width: 40%;
+  }
+  .movies-con section {
+    flex-direction: row;
+  }
+  .movies-con article {
+    width: 20%;
+  }
+  .synopsis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .synopsis div {
+    width: 40%;
+  }
+  .synopsis span {
+    width: 30%;
+    display: block;
+  }
+}
