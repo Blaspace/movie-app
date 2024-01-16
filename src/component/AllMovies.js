@@ -7,13 +7,13 @@ function AllMovies({ movies, loading, from }) {
   return (
     <div className="movies">
       <div className="movies-con">
-        <div>
+        <div id="start">
           <h3>All movies from around the globe</h3>
         </div>
         <br />
         {loading ? (
           <span className="loading">
-            <FiLoader className="load"/>
+            <FiLoader className="load" />
           </span>
         ) : (
           <section>

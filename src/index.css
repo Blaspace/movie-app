@@ -48,7 +48,7 @@ a {
   left: 0;
   background-image: linear-gradient(black, black, transparent);
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
 }
@@ -87,7 +87,7 @@ a {
   flex-direction: column;
   position: fixed;
   width: 100vw;
-  top: 100px;
+  top: 80px;
   height: 0;
   list-style: none;
   background-color: rgb(24, 24, 24);
@@ -112,7 +112,7 @@ a {
 /*header*/
 .header {
   width: 100%;
-  height: 45vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,8 +144,8 @@ a {
   background-color: #fafafa;
 }
 .header-con h1 {
-  font-size: 2em;
-  width: 50%;
+  font-size: 1.5rem;
+  width: 90%;
 }
 .header-con p {
   font-weight: 600;
@@ -182,7 +182,6 @@ a {
 }
 .movies-con article {
   width: 90%;
-  height: 350px;
   color: #fafafa;
   margin-top: 20px;
   cursor: pointer;
@@ -270,6 +269,7 @@ a {
   }
   .header-con h1 {
     font-size: 3em;
+    width: 50%;
   }
   .header-con button {
     width: 130px;
@@ -283,6 +283,7 @@ a {
   }
   .movies-con article {
     width: 20%;
+    height: 400px;
   }
   .synopsis {
     display: flex;

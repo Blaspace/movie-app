@@ -12,7 +12,9 @@ function Header({ bg, text }) {
             <br /> for absolutly free
           </p>
           <br />
-          <button>Get Started</button>
+          <button>
+            <a href="#start">Get Started</a>
+          </button>
         </div>
       </div>
     </header>
