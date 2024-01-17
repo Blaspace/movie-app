@@ -82,7 +82,11 @@ function SingleMovie() {
   }, [foundMovie]);
 
   const handleDownload = (e) => {
-    window.open(e);
+    if (e) {
+      window.open(e);
+    } else {
+      alert("Movie not available");
+    }
   };
 
   return (

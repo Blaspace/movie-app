@@ -141,10 +141,10 @@ a {
   color: #fafafa;
   background-color: rgb(255, 183, 0);
   border: 2px solid rgb(255, 183, 0);
-  transition: background-color 0.7s;
+  transition: background-color 0.5s;
 }
 .header-con button:hover {
-  background-color: #fafafa;
+  background-color: transparent;
   color: rgb(255, 183, 0);
 }
 .header-con h1 {
