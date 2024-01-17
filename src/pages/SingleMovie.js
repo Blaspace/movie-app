@@ -73,7 +73,7 @@ function SingleMovie() {
             (value) => value.link && value?.link?.length > 40
           );
           setLink(i);
-          console.log(i);
+          console.log(data);
           setSingleMovie(data);
         })
         .catch((err) => console.log(err))
@@ -104,9 +104,15 @@ function SingleMovie() {
           </span>
         ) : (
           <div className="single-con">
-            <div className="synopsis">
+            <div className="synopsis" id="start">
               <span>
-                <img src={foundMovie[0]?.img} alt="movie" />
+                <img
+                  src={foundMovie[0]?.img}
+                  alt="movie"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="high"
+                />
               </span>
               <div>
                 <h2>Synopsis</h2>
@@ -125,7 +131,7 @@ function SingleMovie() {
                     <>
                       {link?.map((value) => {
                         return (
-                          <div>
+                          <div className="btn">
                             <p>{value?.text}</p>
                             <button onClick={() => handleDownload(value?.link)}>
                               Download EPS

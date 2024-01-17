@@ -150,9 +150,11 @@ a {
 .header-con h1 {
   font-size: 1.5rem;
   width: 90%;
+  cursor: pointer;
 }
-.header-con p {
+.disclaimer {
   font-weight: 600;
+  width: 80%;
   font-size: 16px;
 }
 /*All movie*/
@@ -232,11 +234,16 @@ a {
 }
 .synopsis img {
   width: 100%;
+  height: auto;
 }
 .download-btn {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   gap: 5px;
+}
+.btn {
+  width: 100%;
 }
 .download-btn p {
   font-weight: 500;
@@ -246,10 +253,13 @@ a {
   width: 100px;
   height: 35px;
   border: 2px solid rgb(255, 183, 0);
-  border: none;
   font-weight: 650;
-  background-color: rgb(255, 183, 0);
+  background-color: #ffb700;
   color: #fafafa;
+  transition: background-color 0.5s;
+}
+.download-btn button:hover {
+  background-color: transparent;
 }
 
 @media (min-width: 780px) {
@@ -277,6 +287,9 @@ a {
     height: 50px;
   }
   .movies-con div {
+    width: 40%;
+  }
+  .disclaimer {
     width: 40%;
   }
   .movies-con section {
