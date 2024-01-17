@@ -2,13 +2,13 @@ import React from "react";
 import { FiLoader } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
-function AllMovies({ movies, loading, from }) {
+function AllMovies({ movies, loading, from, text }) {
   const navigate = useNavigate();
   return (
     <div className="movies">
       <div className="movies-con">
         <div id="start">
-          <h3>All movies from around the globe</h3>
+          <h3>{text}</h3>
         </div>
         <br />
         {loading ? (

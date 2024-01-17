@@ -19,7 +19,12 @@ function Home() {
   return (
     <div>
       <Header bg={bg} />
-      <AllMovies movies={home} loading={loading} from={"home"} />
+      <AllMovies
+        movies={home}
+        loading={loading}
+        from={"home"}
+        text={"All Movies"}
+      />
     </div>
   );
 }

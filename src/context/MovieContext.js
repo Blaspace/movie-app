@@ -1,8 +1,9 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const MovieContext = createContext();
 
 export const ContextProvider = ({ children }) => {
+  const [allMovies, setAllMovies] = useState();
   const [home, setHome] = useState([]);
   const [asia, setAsia] = useState([]);
   const [chinese, setChinese] = useState([]);
@@ -10,6 +11,10 @@ export const ContextProvider = ({ children }) => {
   const [movie, setMovie] = useState([]);
   const [series, setSeries] = useState([]);
 
+  useEffect(() => {
+    const i = home.concat(asia, chinese, kdrama, movie, series);
+    setAllMovies(i);
+  }, []);
   //const url = "http://localhost:5000";
   const url = "https://movie-app-nqr1.onrender.com";
   return (

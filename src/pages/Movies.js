@@ -21,7 +21,12 @@ function Movies() {
   return (
     <div>
       <Header bg={bg} />
-      <AllMovies movies={movie} loading={loading} from={"movie"} />
+      <AllMovies
+        movies={movie}
+        loading={loading}
+        from={"movie"}
+        text={"All Movies"}
+      />
     </div>
   );
 }

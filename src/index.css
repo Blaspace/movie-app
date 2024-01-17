@@ -69,7 +69,7 @@ a {
   align-items: center;
 }
 .nav h1 {
-  color: red;
+  color: #ffb700;
   font-size: 2em;
   font-weight: 600;
   margin-left: 10px;
@@ -93,7 +93,7 @@ a {
   top: 80px;
   height: 0;
   list-style: none;
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(34, 28, 18);
   overflow-y: hidden;
   transition: height 500ms;
 }
@@ -109,7 +109,7 @@ a {
   font-weight: 600;
   color: #fafafa;
   display: none;
-  background-color: red;
+  background-color: rgb(255, 183, 0);
   border: none;
 }
 /*header*/
@@ -121,7 +121,7 @@ a {
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(114, 112, 112);
+  background-color: rgb(114, 113, 112);
   background-blend-mode: multiply;
 }
 .header-con {
@@ -139,12 +139,13 @@ a {
   font-size: 16px;
   font-weight: 700;
   color: #fafafa;
-  background-color: red;
-  border: 1px solid red;
+  background-color: rgb(255, 183, 0);
+  border: 2px solid rgb(255, 183, 0);
   transition: background-color 0.7s;
 }
 .header-con button:hover {
   background-color: #fafafa;
+  color: rgb(255, 183, 0);
 }
 .header-con h1 {
   font-size: 1.5rem;
@@ -172,7 +173,7 @@ a {
   display: flex;
   align-items: center;
   width: 75%;
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid rgb(255, 183, 0);
 }
 .movies-con section {
   display: flex;
@@ -247,10 +248,10 @@ a {
 .download-btn button {
   width: 100px;
   height: 35px;
-  border: 2px solid red;
+  border: 2px solid rgb(255, 183, 0);
   border: none;
   font-weight: 650;
-  background-color: red;
+  background-color: rgb(255, 183, 0);
   color: #fafafa;
 }
 

@@ -20,7 +20,7 @@ function Chinese() {
   return (
     <div>
       <Header bg={bg} />
-      <AllMovies movies={chinese} loading={loading} from={"chinese"} />
+      <AllMovies movies={chinese} loading={loading} from={"chinese"} text={"All  Chinese Movies"}/>
     </div>
   );
 }

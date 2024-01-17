@@ -21,7 +21,12 @@ function Kdrama() {
   return (
     <div>
       <Header bg={bg} />
-      <AllMovies movies={kdrama} loading={loading} from={"kdrama"} />
+      <AllMovies
+        movies={kdrama}
+        loading={loading}
+        from={"kdrama"}
+        text={"All  K-Drama Movies"}
+      />
     </div>
   );
 }

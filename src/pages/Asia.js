@@ -20,7 +20,12 @@ function Asia() {
   return (
     <div>
       <Header bg={bg} />
-      <AllMovies movies={asia} loading={loading} from={"asia"} />
+      <AllMovies
+        movies={asia}
+        loading={loading}
+        from={"asia"}
+        text={"All  Asia Movies"}
+      />
     </div>
   );
 }

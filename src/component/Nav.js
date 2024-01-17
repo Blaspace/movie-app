@@ -26,7 +26,7 @@ function Nav() {
               color: "#fafafa",
               textDecoration: "none",
               borderBottom: isActive
-                ? "3px solid red"
+                ? "3px solid #ffb700"
                 : "3px solid transparent",
             })}
           >
@@ -38,7 +38,7 @@ function Nav() {
               color: "#fafafa",
               textDecoration: "none",
               borderBottom: isActive
-                ? "3px solid red"
+                ? "3px solid #ffb700"
                 : "3px solid transparent",
             })}
           >
@@ -50,7 +50,7 @@ function Nav() {
               color: "#fafafa",
               textDecoration: "none",
               borderBottom: isActive
-                ? "3px solid red"
+                ? "3px solid #ffb700"
                 : "3px solid transparent",
             })}
           >
@@ -62,7 +62,7 @@ function Nav() {
               color: "#fafafa",
               textDecoration: "none",
               borderBottom: isActive
-                ? "3px solid red"
+                ? "3px solid #ffb700"
                 : "3px solid transparent",
             })}
           >
@@ -74,7 +74,7 @@ function Nav() {
               color: "#fafafa",
               textDecoration: "none",
               borderBottom: isActive
-                ? "3px solid red"
+                ? "3px solid #ffb700"
                 : "3px solid transparent",
             })}
           >
@@ -86,7 +86,7 @@ function Nav() {
               color: "#fafafa",
               textDecoration: "none",
               borderBottom: isActive
-                ? "3px solid red"
+                ? "3px solid #ffb700"
                 : "3px solid transparent",
             })}
           >

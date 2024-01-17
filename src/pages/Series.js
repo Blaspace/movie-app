@@ -20,7 +20,12 @@ function Series() {
   return (
     <div>
       <Header bg={bg} />
-      <AllMovies movies={series} loading={loading} from={"series"} />
+      <AllMovies
+        movies={series}
+        loading={loading}
+        from={"series"}
+        text={"All Series"}
+      />
     </div>
   );
 }
