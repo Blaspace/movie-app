@@ -8,8 +8,7 @@ function Header({ bg, text }) {
           <h1>{text ? text : "Unlimited movies, TV shows, and more"}</h1>
           <br />
           <p>
-            Dawnload all your favourite movies and TV series
-            <br /> for absolutly free
+            Dawnload all your favourite movies and TV seriesfor absolutly free
           </p>
           <br />
           <button>

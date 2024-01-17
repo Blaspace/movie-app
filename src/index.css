@@ -193,7 +193,6 @@ a {
 }
 .movies-con span {
   width: 100%;
-  height: 75%;
   display: block;
 }
 .header-con article:hover {
@@ -205,8 +204,6 @@ a {
 }
 .movies-con img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 /*single movie*/
 .single-movie {
@@ -288,6 +285,13 @@ a {
   .movies-con article {
     width: 20%;
     height: 400px;
+  }
+  .movies-con span {
+    height: 75%;
+  }
+  .movies-con img {
+    height: 100%;
+    object-fit: cover;
   }
   .synopsis {
     display: flex;
