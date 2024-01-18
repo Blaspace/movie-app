@@ -10,6 +10,7 @@ export const ContextProvider = ({ children }) => {
   const [kdrama, setKdrama] = useState([]);
   const [movie, setMovie] = useState([]);
   const [series, setSeries] = useState([]);
+  const [result, setResult] = useState([]);
 
   useEffect(() => {
     const i = home.concat(asia, chinese, kdrama, movie, series);
@@ -20,6 +21,8 @@ export const ContextProvider = ({ children }) => {
   return (
     <MovieContext.Provider
       value={{
+        result,
+        setResult,
         home,
         setHome,
         url,

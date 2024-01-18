@@ -59,6 +59,36 @@ a {
   font-size: 2rem;
   margin-right: 15px;
 }
+.search {
+  display: none;
+  align-items: center;
+  width: 20%;
+  justify-content: stretch;
+  height: 35px;
+  border: 1px solid rgb(255, 183, 0);
+  border-radius: 20px;
+}
+.search span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 20px;
+  color: #ffb700;
+  height: 100%;
+  border-right: 1px solid rgb(71, 71, 71);
+}
+.search input {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: rgb(255, 183, 0);
+  padding: 5px;
+}
+.search input:focus {
+  outline: none;
+}
 .nav nav {
   width: 100%;
   max-width: 1200px;
@@ -138,7 +168,7 @@ a {
   height: 40px;
   font-size: 16px;
   font-weight: 700;
-  color: #fafafa;
+  color: black;
   background-color: rgb(255, 183, 0);
   border: 2px solid rgb(255, 183, 0);
   transition: background-color 0.5s;
@@ -263,6 +293,9 @@ a {
 }
 
 @media (min-width: 780px) {
+  .search {
+    display: flex;
+  }
   .nav h3 {
     display: none;
   }
@@ -284,7 +317,7 @@ a {
   }
   .header-con button {
     width: 130px;
-    height: 50px;
+    height: 40px;
   }
   .movies-con div {
     width: 40%;

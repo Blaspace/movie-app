@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
-import Chinese from "../pages/Chinese";
+import { NavLink, useNavigate } from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
+import { IoIosSearch } from "react-icons/io";
 
-function Nav() {
+function Nav({ setSearch, handleSearch }) {
   const [toggle, setToggle] = useState(false);
+  const navigate = useNavigate();
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -14,7 +16,11 @@ function Nav() {
     } else {
       ulref.current.style.height = "0";
     }
-  });
+  }, [toggle]);
+  const handleS = (e) => {
+    navigate("../../search");
+    setSearch(e.target.value);
+  };
   return (
     <div className="nav">
       <nav>
@@ -158,6 +164,16 @@ function Nav() {
         <h3 onClick={handleToggle}>
           <b>{!toggle ? <>&#x2630;</> : <>&times;</>}</b>
         </h3>
+        <div className="search">
+          <span onClick={handleSearch}>
+            <IoIosSearch />
+          </span>
+          <input
+            type="text"
+            placeholder="Search"
+            onChange={(e) => handleS(e)}
+          />
+        </div>
       </nav>
     </div>
   );

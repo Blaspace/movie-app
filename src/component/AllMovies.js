@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FiLoader } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
 function AllMovies({ movies, loading, from, text }) {
+  const [newMovie, setNewMovie] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const i = movies?.sort((a, b) => {
+      return 0.5 - Math.random();
+    });
+    setNewMovie(i);
+  });
   return (
     <div className="movies">
       <div className="movies-con">
@@ -17,7 +25,7 @@ function AllMovies({ movies, loading, from, text }) {
           </span>
         ) : (
           <section>
-            {movies.map((value, i) => {
+            {newMovie.map((value, i) => {
               return (
                 <article
                   key={i}

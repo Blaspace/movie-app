@@ -14,7 +14,7 @@ function SingleMovie() {
   const [link, setLink] = useState([]);
   const [loading, setLoading] = useState(false);
   const [bg, setBg] = useState();
-  const { home, asia, chinese, kdrama, movie, series, url } =
+  const { home, asia, chinese, kdrama, movie, series, url, result } =
     useContext(MovieContext);
   const params = useParams();
 
@@ -44,8 +44,6 @@ function SingleMovie() {
         setBg(heroimg);
         setFoundMovie(
           movie.filter((v) => {
-            console.log(v.title);
-            console.log(params.id);
             return v.title.trim() === params.id;
           })
         );
@@ -54,9 +52,18 @@ function SingleMovie() {
         setBg(seriesimg);
         setFoundMovie(series.filter((v) => v.title === params.id));
         break;
+      case "search":
+        setBg(heroimg);
+        setFoundMovie(
+          result.filter((v) => {
+            return v.title.trim() === params.id;
+          })
+        );
+        break;
     }
   }, []);
   useEffect(() => {
+    console.log(foundMovie);
     if (foundMovie.length) {
       setLoading(true);
       console.log(foundMovie[0]);

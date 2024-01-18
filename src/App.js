@@ -9,6 +9,7 @@ import Movies from "./pages/Movies";
 import Series from "./pages/Series";
 import SingleMovie from "./pages/SingleMovie";
 import GetValue from "./component/GetValue";
+import Search from "./pages/Search";
 function App() {
   return (
     <Routes>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/asia" element={<Asia />} />
         <Route path="/chinese" element={<Chinese />} />
         <Route path="/movies" element={<Movies />} />
+        <Route path="/search" element={<Search />} />
         <Route element={<GetValue />}>
           <Route path="/single/:class/:id" element={<SingleMovie />} />
         </Route>
