@@ -14,15 +14,20 @@ function Header({ bg, text }) {
           <p className="disclaimer">
             <b>Disclaimer:</b> We do not claim ownership of any movie on this
             site. If your copyrighted material has been uploaded or links to
-            your copyrighted material has been uploaded kindly click here to
+            your copyrighted material has been uploaded kindly contact us to
             file a take down notice.
           </p>
           <br />
-          <button>
-            <a href="#start" style={{ color: "black" }}>
-              Get Started
-            </a>
-          </button>
+          <span>
+            <button>
+              <a href="#start" style={{ color: "black" }}>
+                Get Started
+              </a>
+            </button>
+            <button>
+              <a style={{ color: "black" }}>Contact Us</a>
+            </button>
+          </span>
         </div>
       </div>
     </header>

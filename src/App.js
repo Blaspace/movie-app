@@ -19,7 +19,7 @@ function App() {
         <Route path="/asia" element={<Asia />} />
         <Route path="/chinese" element={<Chinese />} />
         <Route path="/movies" element={<Movies />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/search/:id" element={<Search />} />
         <Route element={<GetValue />}>
           <Route path="/single/:class/:id" element={<SingleMovie />} />
         </Route>

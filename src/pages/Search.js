@@ -2,16 +2,17 @@ import React, { useContext, useEffect, useState } from "react";
 import MovieContext from "../context/MovieContext";
 import Nav from "../component/Nav";
 import { FiLoader } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Search() {
   const { url, result, setResult } = useContext(MovieContext);
-  const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const handleSearch = () => {
+  const params = useParams();
+
+  useEffect(() => {
     setLoading(true);
-    const i = search.replace(/ /g, "+");
+    const i = params.id.replace(/ /g, "+");
     fetch(`${url}/search`, {
       method: "POST",
       headers: {
@@ -22,10 +23,11 @@ function Search() {
       .then((res) => res.json())
       .then((data) => setResult(data))
       .finally(() => setLoading(false));
-  };
+  }, [params]);
+
   return (
     <div>
-      <Nav setSearch={setSearch} search={search} handleSearch={handleSearch} />
+      <Nav />
       <br />
       <br />
       <br />
