@@ -16,6 +16,10 @@ function NavM({ handleSearch, setSearch }) {
   const handleShow = () => {
     setToggleS(!toggleS);
   };
+  const handleS = () => {
+    setToggleS(false);
+    handleSearch();
+  };
   useEffect(() => {
     if (toggleS) {
       inputRef.current.style.height = "80px";
@@ -36,7 +40,7 @@ function NavM({ handleSearch, setSearch }) {
       <nav>
         <h1>MYFLIX</h1>
         <section className="drop-down" id="msearch" ref={inputRef}>
-          <span onClick={handleSearch}>
+          <span onClick={handleS}>
             <IoIosSearch />
           </span>
           <input type="text" onChange={(e) => setSearch(e.target.value)} />
