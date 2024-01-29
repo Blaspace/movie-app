@@ -265,14 +265,13 @@ a {
 .movies-con section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 20px;
 }
 .movies-con article {
-  width: 90%;
+  width: 40%;
   color: #fafafa;
   margin-top: 20px;
   cursor: pointer;

@@ -12,10 +12,6 @@ export const ContextProvider = ({ children }) => {
   const [series, setSeries] = useState([]);
   const [result, setResult] = useState([]);
 
-  useEffect(() => {
-    const i = home.concat(asia, chinese, kdrama, movie, series);
-    setAllMovies(i);
-  }, []);
   //const url = "http://localhost:5000";
   const url = "https://movie-app-nqr1.onrender.com";
   return (
