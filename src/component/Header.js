@@ -11,13 +11,6 @@ function Header({ bg, text }) {
             {text ? text : "Unlimited movies, TV shows, and more"}
           </h1>
           <br />
-          <p className="disclaimer">
-            <b>Disclaimer:</b> We do not claim ownership of any movie on this
-            site. If your copyrighted material has been uploaded or links to
-            your copyrighted material has been uploaded kindly contact us to
-            file a take down notice.
-          </p>
-          <br />
           <span>
             <button>
               <a href="#start" style={{ color: "black" }}>
